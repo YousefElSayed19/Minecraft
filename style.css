@@ -1,0 +1,588 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.parent{
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    gap: 25px;
+    background: #e7e7e7;
+}
+nav {
+    position: relative;
+}
+nav .search{
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 20px;
+}
+nav .search input{
+    border: none;
+    background: #e7e7e7e7;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 150px;
+}
+nav .search button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 70px;
+}
+nav .members{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 20px;
+}
+nav .members h1 {
+    font-size: 15px;
+    position: relative;
+}
+
+nav .members .box{
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+nav .members .box div {
+    position: absolute;
+    left: 70px;
+    top: -10px;
+}
+nav .members .box div h1 {
+    margin-bottom: 0;
+}
+nav .members .box div .boxBlue {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+nav .groups{
+    background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+nav .groups .last {
+    margin-right:50px;
+}
+nav .groups .box {
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+}
+nav .groups .box div {
+    position: absolute;
+    left: 70px;
+    top: -10px;
+}
+nav .groups .box div h1 {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+nav .groups .box div .boxBlue {
+    margin-top: 5px;
+    font-size: 12px;
+}
+nav .recently {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 20px;
+}
+nav .recently .boxPhoto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 250px;
+}
+nav .recently .boxPhoto img {
+    margin: 5px;
+}
+nav .schedule{
+    background: white ;
+    padding: 20px ;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    padding-top: 70px;
+}
+nav .schedule .sub{
+    position: absolute;
+    top: 20px;
+    font-size: 15px;
+    right: 20px;
+}
+nav .schedule .suc{
+    display: flex;
+    justify-content: space-between;
+}
+nav .boxBlue{
+    background: #e4ecf1;
+    color: #6b99b2;
+    font-weight: bold;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+nav img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+nav .boxs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    width: 300px;
+}
+nav .green {
+    display: block;
+    color: white;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 14px;
+    width: fit-content;
+    position: relative;
+    right: 10px;
+    margin-bottom: 20px;
+}
+
+section {
+    position: relative;
+}
+section .poster{
+    position: relative;
+    background: white;
+    margin-bottom: 20px;
+    height: 350px;
+    background: url("images/artwork-nature-landscape-fantasy-art-wallpaper-thumb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+section .poster h1 {
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+    color: white;
+    background: #2e2e2e;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+section .poster div  {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+section .poster div span {
+    background: #000000 ;
+    border: white 4px solid;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+}
+section .poster div span:nth-of-type(2),section .poster div span:nth-of-type(3) {
+    opacity: 0.6;
+}
+section .activity{
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 20px;
+}
+section .activity img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+section .activity .title::after{
+    width: 793px;
+}
+section .activity .box {
+    display: flex;
+    margin-top: 30px;
+}
+section .activity div div p {
+    position: relative;
+    bottom: 20px;
+    right: -10px;
+    line-height: 25px;
+}
+section .activity button {
+    border: none;
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+}
+section .posts .title::after{
+    width: 795px;
+}
+section .posts{
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 20px;
+}
+section .posts .box{
+    display: flex;
+    margin-top: 20px;
+}
+section .posts .box img {
+    width: 260px;
+    height: 90px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+section .posts .box div {
+    position: relative;
+    bottom: 20px;
+    margin-left: 10px;
+}
+section .posts .numbers{
+    display: flex;
+    justify-content: end;
+}
+section .posts .numbers span {
+    background: #e3e3e3 ;
+    color: #757575;
+    margin-left: 5px;
+    padding: 5px 7px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+section .features{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 20px;
+    height: 350px;
+}
+section .features .title::after{
+    width: 795px;
+}
+section .features .box {
+    display: flex;
+    justify-content: space-between;
+}
+section .features  div img {
+    height: 150px;
+    width: 180px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+section .features  div p {
+    margin-bottom: 30px;
+}
+
+
+
+aside{
+    position: relative;
+}
+aside .sign {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+}
+aside .sign .input{
+    border: none;
+    background: #e6e6e69f;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+aside .sign .pass {
+    margin-bottom: 20px;
+}
+aside .sign .input:focus-visible{
+    outline: none;
+}
+aside .sign .me {
+    position: relative;
+    bottom: 2px;
+    font-size: 15px;
+    color: rgba(157, 157, 157, 0.825);
+}
+aside .sign button {
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+aside .sign .last{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: rgb(60, 60, 60);
+}
+aside .sign .backBlack{
+    position: absolute;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 110px;
+    bottom: 2px;
+    font-size: 11px;
+}
+aside .statistics{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+aside .statistics div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-top:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+aside .statistics div i {
+    margin-right: 10px;
+}
+aside .online{
+    background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+aside .recent{
+    background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+aside .topics{
+    background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+
+.title{
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+.title::after{
+    content: "";
+    background: rgba(157, 157, 157, 0.425);
+    width: 300px;
+    height: 1px;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+.green{
+    background: #77af12;
+}
+.blue{
+    background: #2f9bc1;
+}
+.red{
+    background: #c12f6c;
+}
+.gray{
+    color: rgba(7, 4, 4, 0.293);
+}
+.black {
+    color: black;
+}
+.bold {
+    font-weight: bold ;
+}
+@media (max-width:420px){
+    .parent{
+        width: 380px;
+        grid-template-columns: 300px;
+    }
+    section .poster h1 {
+        position: absolute;
+        left: 50px;
+        bottom: 40px;
+        width: 200px;
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    section .posts .box img {
+        position: relative;
+        bottom: 20px;
+    }
+    section .features {
+        height: 1000px;
+    }
+    section .features .box {
+        display: block;
+        padding-left: 50px;
+    }
+}
+
+
+/* 
+#2f9bc1
+#77af12
+#c12f6c
+
+
+*/
